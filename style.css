@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins";
+}
+
+main {
+  height: calc(100vh - 56px);
+  background-color: #0e0e0e;
+  position: relative;
+}
+
+main .piano {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+main .piano .key {
+  width: 5vw;
+  height: 100%;
+  background-color: white;
+  margin-right: 1rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .piano .key:last-child {
+  margin-right: 0;
+}
+
+main .piano .key.played {
+  background-color: #0d2436;
+  color: white;
+}
+
+main .piano .key audio {
+  display: none;
+}
+
+main #recording-box {
+  height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #recording-box .managment-box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3rem;
+}
+
+main #recording-box .managment-box:nth-child(1) {
+  margin-left: 3rem;
+}
+
+main #recording-box .managment-box .canal {
+  height: 20%;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1c3c61;
+  color: white;
+}
+
+main #recording-box .managment-box .manage-buttons {
+  height: 20%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #recording-box .managment-box .manage-buttons button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+}
+
+main #recording-box .managment-box .manage-buttons button:hover i {
+  color: #3279ca;
+}
+
+main #recording-box .managment-box .manage-buttons button:nth-child(3):hover i {
+  color: #910909;
+}
+
+main #recording-box .managment-box .manage-buttons button.recording i {
+  color: red;
+}
+
+main #recording-box .managment-box .manage-buttons button.playing i {
+  color: green;
+}
+
+main #recording-box .managment-box .manage-buttons button i {
+  font-size: 24px;
+  color: white;
+}
+
+main #recording-box .managment-box .manage-buttons button:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=style.css.map */

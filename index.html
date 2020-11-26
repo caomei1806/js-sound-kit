@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SoundKit</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			href="./fontawesome-free-5.15.1-web/css/fontawesome.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="./fontawesome-free-5.15.1-web/css/brands.css"
+			rel="stylesheet"
+		/>
+		<link href="./fontawesome-free-5.15.1-web/css/solid.css" rel="stylesheet" />
+		<script src="./index.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-dark bg-dark">
+				<div class="container">
+					<span class="navbar-brand mb-0 h1">SoundKit</span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="piano">
+				<div class="key">
+					<audio id="boom" src="./sounds/boom.wav" controls></audio>
+					<span class="keyName">A</span>
+					<span class="sound">Boom</span>
+				</div>
+
+				<div class="key">
+					<audio id="clap" src="./sounds/clap.wav" controls></audio>
+					<span class="keyName">S</span>
+					<span class="sound">Clap</span>
+				</div>
+
+				<div class="key k-hihat">
+					<audio id="hihat" src="./sounds/hihat.wav" controls></audio>
+					<span class="keyName">D</span>
+					<span class="sound">Hithat</span>
+				</div>
+
+				<div class="key k-kick">
+					<audio id="kick" src="./sounds/kick.wav" controls></audio>
+					<span class="keyName">F</span>
+					<span class="sound">Kick</span>
+				</div>
+
+				<div class="key k-openhat">
+					<audio id="openhat" src="./sounds/openhat.wav" controls></audio>
+					<span class="keyName">G</span>
+					<span class="sound">Openhat</span>
+				</div>
+
+				<div class="key k-ride">
+					<audio id="ride" src="./sounds/ride.wav" controls></audio>
+					<span class="keyName">H</span>
+					<span class="sound">Ride</span>
+				</div>
+
+				<div class="key k-snare">
+					<audio id="snare" src="./sounds/snare.wav" controls></audio>
+					<span class="keyName">J</span>
+					<span class="sound">Snare</span>
+				</div>
+
+				<div class="key k-tink">
+					<audio id="tink" src="./sounds/tink.wav" controls></audio>
+					<span class="keyName">K</span>
+					<span class="sound">Tink</span>
+				</div>
+
+				<div class="key k-boom">
+					<audio id="tom" src="./sounds/tom.wav" controls></audio>
+					<span class="keyName">L</span>
+					<span class="sound">Tom</span>
+				</div>
+			</div>
+			<div id="recording-box">
+				<div class="managment-box">
+					<div class="canal">
+						<span class="canal-nr">1</span>
+					</div>
+					<div class="manage-buttons">
+						<button id="record1" class="record recordBtn">
+							<i class="fas fa-microphone"></i>
+						</button>
+						<button id="play1" class="play playBtn">
+							<i class="fas fa-play"></i>
+						</button>
+						<button id="delete1" class="delete deleteBtn">
+							<i class="fas fa-trash"></i>
+						</button>
+					</div>
+				</div>
+				<div class="managment-box">
+					<div class="canal"><span class="canal-nr">2</span></div>
+					<div class="manage-buttons">
+						<button id="record2" class="record recordBtn">
+							<i class="fas fa-microphone"></i>
+						</button>
+						<button id="play2" class="play playBtn">
+							<i class="fas fa-play"></i>
+						</button>
+						<button id="delete2" class="delete deleteBtn">
+							<i class="fas fa-trash"></i>
+						</button>
+					</div>
+				</div>
+				<div class="managment-box">
+					<div class="canal"><span class="canal-nr">3</span></div>
+					<div class="manage-buttons">
+						<button id="record3" class="record recordBtn">
+							<i class="fas fa-microphone"></i>
+						</button>
+						<button id="play3" class="play playBtn">
+							<i class="fas fa-play"></i>
+						</button>
+						<button id="delete3" class="delete deleteBtn">
+							<i class="fas fa-trash"></i>
+						</button>
+					</div>
+				</div>
+				<div class="managment-box">
+					<div class="canal"><span class="canal-nr">4</span></div>
+					<div class="manage-buttons">
+						<button id="record4" class="record recordBtn">
+							<i class="fas fa-microphone"></i>
+						</button>
+						<button id="play4" class="play playBtn">
+							<i class="fas fa-play"></i>
+						</button>
+						<button id="delete4" class="delete deleteBtn">
+							<i class="fas fa-trash"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
